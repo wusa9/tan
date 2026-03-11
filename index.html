@@ -39,7 +39,6 @@
       padding: 2rem 1rem;
     }
 
-    /* Floating gold particles */
     .particles { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
     .particle {
       position: absolute;
@@ -65,7 +64,6 @@
       max-width: 28rem; width: 100%;
     }
 
-    /* Header badge */
     .badge {
       margin-bottom: 1rem;
       padding: 0.5rem 1.5rem;
@@ -76,7 +74,6 @@
       color: hsl(0, 80%, 30%);
     }
 
-    /* Main card */
     .card {
       width: 100%;
       border-radius: 1rem;
@@ -84,9 +81,7 @@
       background: linear-gradient(180deg, hsl(40, 80%, 90%), hsl(45, 70%, 85%));
       box-shadow: 0 0 40px hsla(45, 100%, 50%, 0.3), 0 20px 60px hsla(0, 0%, 0%, 0.3);
     }
-    .card-title {
-      text-align: center; padding: 1.25rem 0 0.5rem;
-    }
+    .card-title { text-align: center; padding: 1.25rem 0 0.5rem; }
     .card-title h1 {
       font-size: 1.875rem; font-weight: 900; letter-spacing: 0.1em;
       color: hsl(0, 80%, 35%);
@@ -97,17 +92,13 @@
       color: hsl(0, 60%, 40%);
     }
 
-    /* Image */
-    .img-wrap {
-      display: flex; justify-content: center; padding: 0 1rem; margin-top: -0.5rem;
-    }
+    .img-wrap { display: flex; justify-content: center; padding: 0 1rem; margin-top: -0.5rem; }
     .img-wrap img {
       width: 18rem; height: 18rem; object-fit: contain;
       filter: drop-shadow(0 10px 15px rgba(0,0,0,0.2));
       animation: bounce-subtle 2s ease-in-out infinite;
     }
 
-    /* Stats */
     .stats {
       display: flex; justify-content: space-around;
       padding: 0 1rem; margin-top: -0.5rem; padding-bottom: 1rem;
@@ -116,7 +107,6 @@
     .stat-label { font-size: 0.75rem; font-weight: 600; color: hsl(0, 50%, 45%); }
     .stat { text-align: center; }
 
-    /* Testimonial */
     .testimonial {
       width: 100%; margin-top: 1rem; border-radius: 0.75rem;
       padding: 1rem; text-align: center;
@@ -127,7 +117,6 @@
     .testimonial .highlight { color: hsl(45, 100%, 60%); }
     .testimonial .quote { font-size: 0.75rem; margin-top: 0.25rem; color: hsla(0, 0%, 100%, 0.8); font-weight: 400; }
 
-    /* CTA */
     .cta {
       display: flex; align-items: center; justify-content: center; gap: 0.75rem;
       width: 100%; margin-top: 1.25rem; padding: 1rem;
@@ -143,14 +132,12 @@
     .cta:active { transform: scale(0.95); }
     .cta svg { flex-shrink: 0; }
 
-    /* Urgency */
     .urgency {
       margin-top: 0.75rem; font-size: 0.75rem; text-align: center;
       font-weight: 600; color: hsl(45, 100%, 70%);
       animation: pulse 1.5s ease-in-out infinite;
     }
 
-    /* Footer */
     .footer {
       margin-top: 1.5rem; font-size: 0.75rem;
       color: hsla(0, 0%, 100%, 0.4);
@@ -162,14 +149,11 @@
     src="https://www.facebook.com/tr?id=4355634398097177&ev=PageView&noscript=1"
   /></noscript>
 
-  <!-- Particles -->
   <div class="particles" id="particles"></div>
 
   <div class="wrapper">
-    <!-- Badge -->
     <div class="badge">🔥 每日免費報牌 🔥</div>
 
-    <!-- Card -->
     <div class="card">
       <div class="card-title">
         <h1>539 獨家報牌</h1>
@@ -185,27 +169,21 @@
       </div>
     </div>
 
-    <!-- Testimonial -->
     <div class="testimonial">
       <p>⭐ 已有超過 <span class="highlight">5,000+</span> 位會員每日跟牌 ⭐</p>
       <p class="quote">「跟了三個月，真的太準了！」— 忠實會員</p>
     </div>
 
-    <!-- CTA -->
     <a class="cta" href="https://line.me/ti/p/umxw3ma4uV" target="_blank" rel="noopener noreferrer">
       <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.508-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.508.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
       立即領取號碼
     </a>
 
-    <!-- Urgency -->
     <p class="urgency">⚡ 名額有限，今日剩餘 37 位 ⚡</p>
-
-    <!-- Footer -->
     <p class="footer">僅供娛樂參考，請理性投注</p>
   </div>
 
   <script>
-    // Generate particles
     var c = document.getElementById('particles');
     for (var i = 0; i < 12; i++) {
       var d = document.createElement('div');
